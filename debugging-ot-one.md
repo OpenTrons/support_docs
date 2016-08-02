@@ -137,7 +137,7 @@ The OpenTrons app relies on the `"stat"` messages. When the robot is inactive it
 
 #Homing Switches
 
-The homing (endstop) switches are the button on the robot which tell it where it's origin point is (0,0,0). Before moving the machine, first test to see the homing switches are working.
+The homing (endstop) switches are the buttons on the robot that tell each axis where it's origin is (coordinate `0.0`). Before moving the machine, first test to see the homing switches are working.
 
 We can retrieve the current state of all homing switches by sending:
 ```
