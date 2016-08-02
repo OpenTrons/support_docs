@@ -12,6 +12,32 @@ You can see a working demo inside the [`sample_user_protocol.json`](./sample-use
   1. The dimensions of each labware type must be defined inside `containers.json`
   2. If a new piece of labware is being used, it must be added to `containers.json`
 
+```json
+"deck" : {
+	"p200-rack" : {
+		"labware" : "tiprack-200ul"
+	},
+	"p20-rack" : {
+		"labware" : "tiprack-20ul"
+	},
+	"trough": {
+		"labware": "trough-12row"
+	},
+	"plate-1": {
+		"labware": "96-flat"
+	},
+	"plate-2": {
+		"labware": "96-flat"
+	},
+	"plate-3": {
+		"labware": "96-flat"
+	},
+	"trash": {
+		"labware": "point"
+	}
+}
+```
+
 ###Head
 
 1. Define the 1 or 2 pipettes being used in this protocol
