@@ -1,8 +1,8 @@
 #Customized Auto-Protocol
 
-This prototype uses a custom version of [Auto-Protocol](http://autoprotocol.org/specification/). In order to able to be run used as an executable file, many new parameters were added. This is a quick description of those changes.
+The OT.One currently uses a custom version of [Auto-Protocol](http://autoprotocol.org/specification/), with additions to include machine-specific parameters required to operate the OT.One.
 
-You can see a working demo inside the `sample_user_protocol.json` file at the root of this repo.
+You can see a working demo inside the [`sample_user_protocol.json`](./sample-user-protocol.json) file at the root of this repo.
 
 ###Deck
 
