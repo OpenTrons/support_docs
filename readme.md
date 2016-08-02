@@ -11,3 +11,9 @@ If the robot is not behaving as expected, go through this list to isolate the pr
 **Doc not written yet**
 
 If the robot has already be tested, but the app is not behaving as expected, go through this list to isolate the problem.
+
+###[Debugging the OpenTrons JSON Protocol](./debugging-ot-json.md)
+
+**Doc not written yet**
+
+If the robot and app have been tested, but the protocol is not behaving as expected, go through this list to isolate the problem.
