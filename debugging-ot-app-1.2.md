@@ -5,7 +5,6 @@
  * [Download and Install](#download-and-install)
  * [Running the App and Connecting](#running-the-app-and-connecting)
  * [Home and Jog](#home-and-jog)
- * [Writing a Protocol](#writing-a-protocol)
  * [Loading a Protocol](#loading-a-protocol)
  * [Save Container Positions](#save-container-positions)
  * [Run a Protocol](#run-a-protocol)
@@ -14,8 +13,6 @@
 ###Download and Install
 ###Running the App and Connecting
 ###Homing and Jogging
-#Protocols
-###Writing a Protocol
 ###Loading a Protocol
 ###Save Container Positions
 ###Run a Protocol
