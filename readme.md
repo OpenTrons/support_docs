@@ -10,4 +10,4 @@ If the robot is not behaving as expected, go through this list to isolate the pr
 
 **Doc not written yet**
 
-If the robot has already be tested, but the app is not behaving as expected, go through is list to isolate the problem.
+If the robot has already be tested, but the app is not behaving as expected, go through this list to isolate the problem.
