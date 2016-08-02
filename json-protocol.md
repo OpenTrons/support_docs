@@ -1,4 +1,4 @@
-#Customized Auto-Protocol
+#OpenTrons JSON Protocol Syntax
 
 The OT.One currently uses a custom version of [Auto-Protocol](http://autoprotocol.org/specification/), with additions to include machine-specific parameters required to operate the OT.One.
 
