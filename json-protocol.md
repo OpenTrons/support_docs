@@ -2,7 +2,7 @@
 
 The OT.One currently uses a custom version of [Auto-Protocol](http://autoprotocol.org/specification/), with additions to include machine-specific parameters required to operate the OT.One.
 
-You can see a working demo inside the [`sample_user_protocol.json`](./sample-user-protocol.json) file at the root of this repo.
+You can see a working demo inside [`sample_user_protocol.json`](./sample-user-protocol.json).
 
 ###Deck
 
@@ -12,6 +12,7 @@ You can see a working demo inside the [`sample_user_protocol.json`](./sample-use
   1. The dimensions of each labware type must be defined inside `containers.json`
   2. If a new piece of labware is being used, it must be added to `containers.json`
 
+####Example Deck
 ```json
 "deck" : {
 	"p200-rack" : {
@@ -81,6 +82,50 @@ You can see a working demo inside the [`sample_user_protocol.json`](./sample-use
       2. for example, on a p200, we found that if we asked it to move 10uL on a linear scale, it actually moved only 6uL
         1. so in this case, `f1` would be 10, and `f2` would be 6
 
+####Example Head
+```json
+"head" : {
+	"p200" : {
+		"tool" : "pipette",
+		"tip-racks" : [
+			{
+				"container" : "p200-rack"
+			}
+		],
+		"trash-container" : {
+			"container" : "trash"
+		},
+		"multi-channel" : true,
+		"axis" : "a",
+		"volume" : 200,
+		"down-plunger-speed" : 300,
+		"up-plunger-speed" : 500,
+		"tip-plunge" : 8,
+		"extra-pull-volume" : 20,
+		"extra-pull-delay" : 200,
+		"distribute-percentage" : 0.1,
+		"points" : [
+			{
+				"f1" : 10,
+				"f2" : 6
+			},
+			{
+				"f1" : 25,
+				"f2" : 23
+			},
+			{
+				"f1" : 50,
+				"f2" : 49
+			},
+			{
+				"f1" : 200,
+				"f2" : 200
+			}
+		]
+	}
+}
+```
+
 ###Ingredients
 
 1. List the positions and uL amounts of each all liquids at the moment when the job starts
@@ -144,7 +189,37 @@ You can see a working demo inside the [`sample_user_protocol.json`](./sample-use
           1. in order for this to be accurate, the starting positions of each liquid should be defined inside the `Ingredients` section
           2.  the algorithm will adjust throughout the execution to account for changing liquid levels inside all locations
 
-
+####Example Instructions
+```json
+"instructions": [
+	{
+		"tool": "p200",
+		"groups": [
+			{
+				"transfer": [
+					{
+						"from": {
+							"container": "trough",
+							"location": "A1",
+							"tip-offset": -2,
+							"delay" : 2000,
+							"touch-tip" : true
+						},
+						"to": {
+							"container": "plate-1",
+							"location": "A1",
+							"touch-tip" : true
+						},
+						"volume": 100,
+						"blowout" : true,
+						"extra-pull" : true
+					}
+				]
+			}
+		]
+	}
+]
+```
 
 
 
