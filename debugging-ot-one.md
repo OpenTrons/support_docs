@@ -133,7 +133,7 @@ And will continue to print JSON formatted data about every second, for example s
 ```
 {"stat":0}
 ```
-The OpenTrons app relies on the `"stat"` messages. When the robot is innactive it should equal `0`, and when moving will equal `1-5`.
+The OpenTrons app relies on the `"stat"` messages. When the robot is inactive it should equal `0`, and when moving will equal `1-5`.
 
 #Homing Switches
 
