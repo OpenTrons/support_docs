@@ -74,7 +74,7 @@ You can see a working demo inside [`sample_user_protocol.json`](./sample-user-pr
   11. `extra-pull-volume`
     1. how many uL this pipette will add if an `extra-pull` is called in the `Instructions` section
   12. `extra-pull-delay`
-    1. how many milliseconds this pipette will pause if an `extra-pull` is called in the `Instructions` section
+    1. how many seconds this pipette will pause if an `extra-pull` is called in the `Instructions` section
   13. `points`
     1. These are special values, used to change it’s linear plunger movements to a custom curve
     2. it’s an array of uL amounts, where `f1` is what was asked for, and `f2` is what the pipette actually did when running linearly
@@ -102,7 +102,7 @@ You can see a working demo inside [`sample_user_protocol.json`](./sample-user-pr
 		"up-plunger-speed" : 500,
 		"tip-plunge" : 8,
 		"extra-pull-volume" : 20,
-		"extra-pull-delay" : 200,
+		"extra-pull-delay" : 0.2,
 		"distribute-percentage" : 0.1,
 		"points" : [
 			{
@@ -169,7 +169,7 @@ You can see a working demo inside [`sample_user_protocol.json`](./sample-user-pr
         2. for example, if `tip-offset` is 2, then the pipette will arrive 2 millimeters higher (negative will take it lower)
           3. Note: the `containers.json` defines each location’s depth, so if the `tip-offset` value is negative and goes too deep, the software will constrain it and prevent the tip from hitting the bottom of the location
       5. `delay` (optional)
-        1. how many milliseconds to pause after acting on a liquid
+        1. how many seconds to pause after acting on a liquid
         2. this is helpful for letting the liquid and air pressure settle in the tip
       6. `touch-tip` (optional)
         1. `true` or `false`
@@ -202,7 +202,7 @@ You can see a working demo inside [`sample_user_protocol.json`](./sample-user-pr
 							"container": "trough",
 							"location": "A1",
 							"tip-offset": -2,
-							"delay" : 2000,
+							"delay" : 2,
 							"touch-tip" : true
 						},
 						"to": {
