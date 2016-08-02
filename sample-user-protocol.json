@@ -4,7 +4,7 @@
       "labware" : "tiprack-200ul"
     },
     "p20-rack" : {
-      "labware" : "tiprack-200ul"
+      "labware" : "tiprack-20ul"
     },
     "trough": {
       "labware": "trough-12row"
