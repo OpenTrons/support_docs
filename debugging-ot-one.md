@@ -79,11 +79,11 @@ To test the Smoothieboard's serial connection separate from the OpenTrons app, [
 Once CoolTerm is open, press the `Options` button to configure the app for the Smoothieboard.
 
 From the `Serial Port` tab on the left, select:
-  * Port: Smoothieboards's port name (`COM` on Windows, `usbmodem` on Mac)
-  * Baudrate: `115200`
+  * __Port__: Smoothieboards's port name (`COM` on Windows, `usbmodem` on Mac)
+  * __Baudrate__: `115200`
 
 From the `Terminal` tab on left, select:
-  * Terminal Mode: `Line Mode`
+  * __Terminal Mode__: `Line Mode`
 
 Once successfully connected, the Smoothieboard will immediately respond:
 
